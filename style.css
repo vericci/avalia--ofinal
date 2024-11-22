@@ -157,7 +157,7 @@ header img {
 .footer {
     background-color: white;
     color: #fff;
-    padding: 20px;
+    padding: 5rem;
     text-align: center;
 }
 
@@ -173,6 +173,7 @@ header img {
 .footer h2 {
     margin-top: 0;
     flex: 1 1 auto;
+    color: black;
 }
 
 .footer form {
@@ -190,17 +191,18 @@ header img {
 }
 
 .footer button {
-    padding: 10px 20px;
-    background-color: #ffd700;
+    padding: 8px 20px;
+    background-color:black;
     border: none;
-    border-radius: 5px;
-    color: #333;
+    border-radius: 0px;
+    color: white;
     cursor: pointer;
     font-size: 16px;
+    margin-top: 2.8rem;
 }
 
 .footer button:hover {
-    background-color: #e6c200;
+    background-color: rgba(0, 0, 0, 0.457);
 }
 
 .footer nav {
@@ -208,7 +210,7 @@ header img {
 }
 
 .footer nav a {
-    color: #ffd700;
+    color:black;
     text-decoration: none;
     margin: 0 10px;
 }
@@ -222,3 +224,19 @@ header img {
     font-size: 14px;
     color: #bbb;
 }
+
+.containerfooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+   
+}
+
+.containerfooter i {
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+    margin: 0.5rem;
+}
+
