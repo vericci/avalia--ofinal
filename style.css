@@ -74,6 +74,7 @@ header img {
     /*Bordar inferior de cada lista*/
     padding-bottom: 1.2rem;
     /*Tamanho da borda*/
+    
 }
 
 
@@ -84,9 +85,8 @@ header img {
     font-size: 24px;
     background: none;
     border: none;
-    color: white;
+    color: #bbb;
     cursor: pointer;
-    display: ;
 }
 
 
@@ -100,11 +100,11 @@ header img {
 
 .section1 {
     padding: 15rem;
-
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-image: url(img/Captura\ de\ Tela\ \(9\).png);
+
 
 }
 
@@ -351,6 +351,7 @@ header img {
     .itenstext,
     .itenscaixa {
         text-align: center;
+        flex-direction: column;
     }
 
     .caixa {
@@ -489,4 +490,3 @@ header img {
 }
 
 
-}
