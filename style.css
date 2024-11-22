@@ -192,7 +192,7 @@ header img {
 
 .footer button {
     padding: 8px 20px;
-    background-color:black;
+    background-color: black;
     border: none;
     border-radius: 0px;
     color: white;
@@ -210,7 +210,7 @@ header img {
 }
 
 .footer nav a {
-    color:black;
+    color: black;
     text-decoration: none;
     margin: 0 10px;
 }
@@ -230,7 +230,7 @@ header img {
     justify-content: space-between;
     align-items: center;
     margin-top: 4rem;
-   
+
 }
 
 .containerfooter i {
@@ -240,3 +240,119 @@ header img {
     margin: 0.5rem;
 }
 
+@media (max-width: 830px) {
+    header {
+        padding: 2rem;
+        top: 0;
+        position: sticky;
+
+    }
+
+    .section1 {
+        padding: 5rem;
+    }
+
+    .section1 h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .div-section1,
+    .section1 p,
+    .section1 ul,
+    .section1 a {
+        text-align: center;
+    }
+
+    .section1 ul {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .section2 {
+        padding: 10rem;
+    }
+
+    .container-sec2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .itenstext,
+    .itenscaixa {
+        text-align: center;
+    }
+
+    .caixa {
+        transform: translateX(0);
+    }
+
+    .section3 {
+        padding: 10rem;
+    }
+
+    .container-sec3 {
+        flex-direction: column;
+    }
+
+    .section3 h2 {
+        text-align: center;
+    }
+
+    .section3 p {
+        text-align: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer h2,
+    .footer form {
+        flex: none;
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .containerfooter {
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .section1,
+    .section2,
+    .section3 {
+        padding: 10rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer form {
+        margin: 20px 0;
+    }
+
+    .containerfooter {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .section1,
+    .section2,
+    .section3 {
+        padding: 5rem;
+    }
+
+    .footer-content {
+        text-align: left;
+    }
+}
