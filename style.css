@@ -28,6 +28,76 @@ header img {
 
 }
 
+.mobile-menu {
+    /*Estilização da caixa Mobile quando aberta*/
+    display:none ;
+    /*Display: Nenhum*/
+    position: fixed;
+    /*Posição fixa na parte direita da página*/
+    top: 0;
+    /*Superior em 0 fazendo a caixa encostar ao topo*/
+    right: 0;
+    /*Direita em 0 fazendo a caixa encostar a direita*/
+    width: 50%;
+    /*Largura em porcentagem da caixa*/
+    height: 100%;
+    /*Altura de 100% da tela*/
+    background-color: rgb(0, 0, 0);
+    /*Cor de fundo*/
+    flex-direction: column;
+    /*direção dos itens dentro da caixa */
+    align-items: center;
+    /*Alinhamento na vertical do itens*/
+    font-size: 1.8rem;
+    /*tamanho da letra dentro da caixa*/
+}
+
+.nav-links-mobile {
+    /*Lista não ordenada da versão mobile*/
+    display: flex;
+    /*Tornando os itens (LISTAS) flexíveis*/
+    flex-direction: column;
+    /*Estamos direcionando o posicionamento dessas listas*/
+    text-align: end;
+    /*Alinhando o texto ao centro*/
+    gap: 1.2rem;
+    /*Espaço entre as listas */
+    /* width: 0%; Zeramos a largura podendo retirar essa linha para testar visualizão */
+    list-style: none;
+    /*Estilo de lista desabilitado*/
+    /* padding: 0; Preenchimento zerado, podendo também ser retirado para testes */
+}
+
+.nav-links-mobile li {
+    /*listas da versão Mobile*/
+    border-bottom: 1px solid black;
+    /*Bordar inferior de cada lista*/
+    padding-bottom: 1.2rem;
+    /*Tamanho da borda*/
+}
+
+
+
+
+.hamburger,
+.close {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: ;
+}
+
+
+.close {
+    margin-top: 20px;
+    margin-right: 20px;
+    display: block;
+    align-self: end;
+}
+
+
 .section1 {
     padding: 15rem;
 
@@ -355,4 +425,68 @@ header img {
     .footer-content {
         text-align: left;
     }
+}
+
+  /* menu hambuguer*/
+  @media(max-width: 834px) {
+        
+    html {
+        font-size: 12px;
+    }
+    
+    .nav-links-mobile a {
+        color: white;
+        font-size: 1.5rem;
+        
+        
+    }
+    
+    .closeButton i {
+        color: white;
+        
+    }
+    
+    header img {
+        width: 7rem;
+        height: auto;
+    }
+    
+
+    .hamburger {
+        display: block;
+        
+    }
+    
+    .mobile-menu {
+        z-index: 999;
+    }
+    
+    #btn-header {
+        display: none;
+    }
+    
+    
+    .cad-mobile button {
+        width: 10rem;
+        height: 4rem;
+        border-radius: 5px;
+        background-color: white;
+        color: black;
+    }
+    
+    
+    
+    .cad-mobile button a {
+        text-decoration: none;
+        color: black;
+        
+    }
+    
+    .nav {
+        display: none;
+    }
+    
+}
+
+
 }
